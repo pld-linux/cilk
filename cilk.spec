@@ -13,6 +13,7 @@ Group:		Development/Languages
 Source0:	http://bradley.csail.mit.edu/~bradley/cilk/downloads/%{name}-%{version}_%{_rev}.tar.bz2
 # Source0-md5:	1046f684ac72076106574fcc8326e612
 URL:		http://supertech.lcs.mit.edu/cilk/
+BuildRequires:	bison
 BuildRequires:	flex
 Requires:	gcc
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
