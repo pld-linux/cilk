@@ -13,6 +13,7 @@ Group:		Development/Languages
 Source0:	http://bradley.csail.mit.edu/~bradley/cilk/downloads/%{name}-%{version}_%{_rev}.tar.bz2
 # Source0-md5:	1046f684ac72076106574fcc8326e612
 URL:		http://supertech.lcs.mit.edu/cilk/
+Patch0:		%{name}-update.patch
 BuildRequires:	bison
 BuildRequires:	flex
 Requires:	gcc
@@ -42,6 +43,7 @@ Statyczne biblioteki cilka.
 
 %prep
 %setup -q -n %{version}
+%patch0 -p1
 %{!?with_tests:sed 's/ examples / /' -i Makefile.in}
 
 %build
