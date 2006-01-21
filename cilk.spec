@@ -3,7 +3,7 @@
 %bcond_without	tests		# build without tests
 #
 Summary:	Cilk compiler
-Summary(pl):	Kompilator cilka
+Summary(pl):	Kompilator Cilka
 Name:		cilk
 Version:	5.4.2.2
 %define	_rev	1708
@@ -25,7 +25,8 @@ it is especially effective for exploiting dynamic, highly asynchronous
 parallelism, which can be difficult to write in data-parallel or
 message-passing style.
 
-%description -l pl
+#%%description -l pl
+#TODO
 
 %package static
 Summary:	Static cilk libraries
@@ -37,7 +38,7 @@ Requires:	%{name} = %{version}-%{release}
 Static cilk libraries.
 
 %description static -l pl
-Statyczne biblioteki cilka
+Statyczne biblioteki cilka.
 
 %prep
 %setup -q -n %{version}
