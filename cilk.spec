@@ -47,11 +47,11 @@ Statyczne biblioteki cilka.
 %{!?with_tests:sed 's/ examples / /' -i Makefile.in}
 
 %build
-#%%{__libtoolize}
-#%%{__aclocal} -I m4dir
-#%%{__autoconf}
-#%%{__autoheader}
-#%%{__automake}
+%{__libtoolize}
+%{__aclocal} -I m4dir
+%{__autoconf}
+%{__autoheader}
+%{__automake}
 
 %configure
 %{__make}
