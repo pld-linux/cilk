@@ -14,8 +14,11 @@ Source0:	http://bradley.csail.mit.edu/~bradley/cilk/downloads/%{name}-%{version}
 # Source0-md5:	1046f684ac72076106574fcc8326e612
 URL:		http://supertech.lcs.mit.edu/cilk/
 Patch0:		%{name}-update.patch
+BuildRequires:	autoconf
+BuildRequires:	automake
 BuildRequires:	bison
 BuildRequires:	flex
+BuildRequires:	libtool
 Requires:	gcc
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
