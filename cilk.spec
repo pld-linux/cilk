@@ -29,8 +29,13 @@ it is especially effective for exploiting dynamic, highly asynchronous
 parallelism, which can be difficult to write in data-parallel or
 message-passing style.
 
-#%%description -l pl
-#TODO
+%description -l pl
+Clik to jêzyk to wielow±tkowego, równoleg³ego programowania oparty na
+ANSI C. Cilk zosta³ zaprojektowany do programowania równoleg³ego
+ogólnego przeznaczenia, ale jest szczególnie efektywny do
+wykorzystywania dynamicznej, wysoce asynchronicznej równoleg³o¶ci,
+kiedy mo¿e byæ trudno pisaæ w stylu z równoleg³ymi danymi lub
+przekazywaniem komunikatów.
 
 %package static
 Summary:	Static cilk libraries
@@ -76,11 +81,11 @@ rm -rf $RPM_BUILD_ROOT
 %doc AUTHORS ChangeLog NEWS README THANKS
 %attr(755,root,root) %{_bindir}/*
 %attr(755,root,root) %{_libdir}/*.so.*.*.*
-%{_includedir}/%{name}
 %attr(755,root,root) %{_libdir}/*.so
 %{_libdir}/*.la
 # contains libcilkrt0*.a
 %{_libdir}/%{name}
+%{_includedir}/%{name}
 
 %files static
 %defattr(644,root,root,755)
