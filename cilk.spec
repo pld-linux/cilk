@@ -3,7 +3,7 @@
 %bcond_without	tests		# build without tests
 #
 Summary:	Cilk compiler
-Summary(pl.UTF-8):   Kompilator Cilka
+Summary(pl.UTF-8):	Kompilator Cilka
 Name:		cilk
 Version:	5.4.2.2
 %define	_rev	1708
@@ -39,7 +39,7 @@ przekazywaniem komunikatów.
 
 %package static
 Summary:	Static cilk libraries
-Summary(pl.UTF-8):   Statyczne biblioteki cilka
+Summary(pl.UTF-8):	Statyczne biblioteki cilka
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 
