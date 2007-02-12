@@ -3,7 +3,7 @@
 %bcond_without	tests		# build without tests
 #
 Summary:	Cilk compiler
-Summary(pl):	Kompilator Cilka
+Summary(pl.UTF-8):   Kompilator Cilka
 Name:		cilk
 Version:	5.4.2.2
 %define	_rev	1708
@@ -29,24 +29,24 @@ it is especially effective for exploiting dynamic, highly asynchronous
 parallelism, which can be difficult to write in data-parallel or
 message-passing style.
 
-%description -l pl
-Clik to jêzyk to wielow±tkowego, równoleg³ego programowania oparty na
-ANSI C. Cilk zosta³ zaprojektowany do programowania równoleg³ego
-ogólnego przeznaczenia, ale jest szczególnie efektywny do
-wykorzystywania dynamicznej, wysoce asynchronicznej równoleg³o¶ci,
-kiedy mo¿e byæ trudno pisaæ w stylu z równoleg³ymi danymi lub
-przekazywaniem komunikatów.
+%description -l pl.UTF-8
+Clik to jÄ™zyk to wielowÄ…tkowego, rÃ³wnolegÅ‚ego programowania oparty na
+ANSI C. Cilk zostaÅ‚ zaprojektowany do programowania rÃ³wnolegÅ‚ego
+ogÃ³lnego przeznaczenia, ale jest szczegÃ³lnie efektywny do
+wykorzystywania dynamicznej, wysoce asynchronicznej rÃ³wnolegÅ‚oÅ›ci,
+kiedy moÅ¼e byÄ‡ trudno pisaÄ‡ w stylu z rÃ³wnolegÅ‚ymi danymi lub
+przekazywaniem komunikatÃ³w.
 
 %package static
 Summary:	Static cilk libraries
-Summary(pl):	Statyczne biblioteki cilka
+Summary(pl.UTF-8):   Statyczne biblioteki cilka
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 
 %description static
 Static cilk libraries.
 
-%description static -l pl
+%description static -l pl.UTF-8
 Statyczne biblioteki cilka.
 
 %prep
